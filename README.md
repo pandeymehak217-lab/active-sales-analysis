@@ -1,42 +1,45 @@
-# Active Sales Analysis Using Python
+# 📊 Active Sales Analysis Using Python
 
-This project analyzes online product sales data to determine **the busiest hours of the day** in terms of purchases. Using **Python, Pandas, and Matplotlib**, the script reads transaction data from a CSV file, calculates hourly sales, and visualizes the results in a line chart.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-orange?logo=matplotlib&logoColor=white)
+
+An analytical tool that processes online sales data to identify peak purchasing hours. Utilizing Python, Pandas, and Matplotlib, this project reads transaction data from a CSV file, calculates hourly sales, and visualizes the results in a line chart.
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
-Modern e-commerce platforms aim to optimize sales by understanding **customer activity patterns**. This project demonstrates how to:
+Modern e-commerce platforms aim to optimize sales by understanding customer activity patterns. This project demonstrates how to:
 
 - Load and process sales data using Pandas  
-- Extract hours from transaction timestamps  
-- Count purchases per hour  
-- Visualize hourly sales trends using Matplotlib  
+- Calculate hourly sales from transaction timestamps  
+- Visualize sales trends over time using Matplotlib  
 
 ---
 
-## Dataset
+## ⚙️ Requirements
 
-The project uses a CSV file containing transaction records. The CSV should have at least the following column:
+- **Python 3.x**  
+- **Pandas**  
+- **Matplotlib**  
 
-- `Transaction Date` — the date and time of each transaction in `YYYY-MM-DD HH:MM:SS` format.
-
-> **Note:** For privacy, a sample CSV is recommended instead of the full dataset. You can create a small sample with the same column names for testing.
-
-Example CSV snippet:
-
-| Transaction Date       |
-|------------------------|
-| 2025-10-25 09:15:23    |
-| 2025-10-25 14:45:10    |
-| 2025-10-25 21:05:55    |
-
----
-
-## How to Run
-
-1. Make sure you have Python 3 installed.  
-2. Install required packages:
+Install dependencies using pip:
 
 ```bash
-pip install pandas matplotlib numpy
+pip install pandas matplotlib
+🛠️ Setup & Usage
+Clone the repository:
+git clone https://github.com/pandeymehak217-lab/active-sales-analysis.git
+cd active-sales-analysis
+Run the script:
+python active_sales_analysis.py
+Expected Output:
+A line chart (active_sales_chart.png) displaying sales trends by hour will be generated in the project directory.
+📂 Repository Structure
+active-sales-analysis/
+├─ active_sales_analysis.py  # Main script for analysis
+├─ Order_details-masked.csv  # Sample sales data
+├─ active_sales_chart.png    # Generated sales trend chart
+├─ README.md                # Project documentation
+🔗 About
+This project showcases the application of Python for data analysis and visualization. By leveraging libraries like Pandas and Matplotlib, it provides insights into sales patterns, aiding in strategic decision-making for e-commerce platforms.
+
